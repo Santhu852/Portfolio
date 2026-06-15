@@ -12,6 +12,17 @@
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="stylesheet" href="styles.css" />
 </head>
+  <script>
+function playReel() {
+    const video = document.querySelector('.hero-video');
+
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}
+</script>
 <body>
 <header class="site-header">
   <nav class="nav-bar glass-strong">
@@ -32,8 +43,7 @@
       <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.3em;color:oklch(1 0 0 / .7);">Showreel · 2025</p>
       <h1>I cut <span class="text-gradient">stories</span> that<br />move people.</h1>
       <p>Santhosh Kumar — video editor & motion graphics designer with 4+ years shaping brand films, music videos and short-form motion.</p>
-      <div class="hero-cta">
-        <button class="btn btn-primary">▶ Play reel</button>
+      <div class="hero-cta"><button class="btn btn-primary" onclick="playReel()">▶ Play Reel</button>
         <a class="btn glass btn-glass" href="work.html">See the work →</a>
       </div>
     </div>
